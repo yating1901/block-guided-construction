@@ -1,6 +1,0 @@
-/home/yating/Workspace/block-guided-construction/build/CMakeFiles/rebuild_cache.dir
-/home/yating/Workspace/block-guided-construction/build/CMakeFiles/edit_cache.dir
-/home/yating/Workspace/block-guided-construction/build/CMakeFiles/di_srocs_loop_functions.dir
-/home/yating/Workspace/block-guided-construction/build/CMakeFiles/builderbot_qtopengl_user_functions.dir
-/home/yating/Workspace/block-guided-construction/build/CMakeFiles/di_srocs_loop_functions_autogen.dir
-/home/yating/Workspace/block-guided-construction/build/CMakeFiles/builderbot_qtopengl_user_functions_autogen.dir
