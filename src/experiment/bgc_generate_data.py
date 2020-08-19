@@ -114,7 +114,7 @@ loop_functions = config.find('./loop_functions')
 
 # experiment parameters
 # TODO set maximum experiment length here
-experiment.attrib['length'] = '10000'
+experiment.attrib['length'] = '50000'
 
 # remove the qtopengl visualization
 if visualization.find('./qt-opengl') is not None:
