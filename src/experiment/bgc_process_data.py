@@ -9,7 +9,7 @@ dataset1 = pandas.read_hdf('bgc.hdf', 'table')
 
 def draw_trajectory(dataset, SEED):
     Set = dataset[dataset["SEED"] == SEED]
-    freeblock = ['00','01','10','11','20','21','30','31']
+    freeblock = ['10','11']
     for block_index in range(0, len(freeblock)):
         datum = []
         datum = Set[Set['ID']==freeblock[block_index]][['X','Y','Z']]
@@ -32,7 +32,7 @@ def Is_ended_automatically(dataset,SEED,steps):
     #print("seed:",SEED)
     Is_Ended = False
     Set = dataset[dataset["SEED"] == SEED] 
-    freeblock = ['00','01','10','11','20','21','30','31']
+    freeblock = ['10','11']
     num = 0
     for block_index in range(0, len(freeblock)):
         datum = []
@@ -80,7 +80,7 @@ def calculate_length(Data):
 Max_seed = 25
 data=[]
 steps = []
-freeblock = ['00','01','10','11','20','21','30','31']
+freeblock = ['10','11']
 for seed in range(1,Max_seed+1):
     data.append(dataset1[dataset1["SEED"] == seed])
     steps.append(int(len(data[seed-1])/len(freeblock)))
@@ -88,7 +88,7 @@ for seed in range(1,Max_seed+1):
     
     
 box_plot(steps)
-draw_trajectory(dataset1,20)
+draw_trajectory(dataset1,23)
 
 
 Is_all_ended = True
