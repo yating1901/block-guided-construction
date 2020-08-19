@@ -55,9 +55,9 @@ rules.customize_block_type = function(block)
             return 4  
       end
       if block.tags.up ~= nil and block.tags.up.type == 2 then
-         --if block.tags.front ~= nil and block.tags.front.type == 3 then
+        -- if block.tags.front ~= nil and block.tags.front.type == 3 then
             return 6
-         --end
+        -- end
       end
    end 
 rules.selection_method = 'nearest_win'
