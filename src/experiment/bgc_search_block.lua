@@ -61,10 +61,10 @@
                                  end
                               end
                            end
-                           if green_number >= 2 then
+                           if green_number >= 1 then
                               random_angle = -8
                            end
-                           if blue_number >= 2 then
+                           if blue_number >= 1 then
                               random_angle = 8
                            end
                            robot.api.move.with_bearing(robot.api.parameters.default_speed,

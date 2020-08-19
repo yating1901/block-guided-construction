@@ -53,7 +53,7 @@ def Is_ended_automatically(dataset,SEED,steps):
 def box_plot(steps):
     #print(steps)
     Data={}
-    Data['Inert Block'] = steps
+    Data['Smart Blocks'] = steps
     df = pandas.DataFrame(Data)
     def formatnum(x, pos):
         return '$%d$$k$' % (x/1000)
@@ -63,9 +63,9 @@ def box_plot(steps):
     
     #label
     plt.ylabel('Number of Steps')
-    plt.xlabel('Number of BuilderBots')
+    plt.xlabel('Type of algorithms')
     plt.gca().yaxis.set_major_formatter(formatter)
-    plt.savefig('Bgc_One_Builderbot.png',bbox_inches = 'tight')
+    plt.savefig('Bgc_Smart_Blocks.png',bbox_inches = 'tight')
     plt.show()
 
 
@@ -88,7 +88,7 @@ for seed in range(1,Max_seed+1):
     
     
 box_plot(steps)
-draw_trajectory(dataset1,23)
+draw_trajectory(dataset1,12)
 
 
 Is_all_ended = True
